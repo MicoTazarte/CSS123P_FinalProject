@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" spacing="10" style="-fx-background-color: black;"
+      xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.ramolete.betterdialog.trash.BattleSystem">
+    <children>
+
+        <!-- Top UI -->
+        <HBox alignment="CENTER_LEFT" spacing="40" style="-fx-padding: 10;">
+            <children>
+                <TextArea fx:id="btlLog" editable="false" prefHeight="100" promptText="..."
+                          style="-fx-control-inner-background: black; -fx-text-fill: white; -fx-border-color: white; -fx-font-size: 14px;  -fx-border-width: 5px; -fx-border-radius: 5px;" wrapText="true" />
+                <Pane prefWidth="150" />
+                <VBox alignment="CENTER_RIGHT" spacing="5" style="-fx-border-color: white; -fx-border-width: 2; -fx-padding: 10;  -fx-border-width: 5px; -fx-border-radius: 5px;">
+                    <Text fill="white" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Miguel" />
+                    <ProgressBar fx:id="enemyHP" prefWidth="250" progress="1.0" />
+                    <Text fx:id="EHText" fill="white" text="HP: 100" />
+                    <ProgressBar fx:id="enemySP" prefWidth="250" progress="1.0" />
+                    <Text fx:id="ESText" fill="white" text="SP: 100" />
+                </VBox>
+            </children>
+        </HBox>
+
+        <!-- Battle Area -->
+        <StackPane fx:id="btlfield" alignment="CENTER" prefHeight="300.0" prefWidth="200.0" style="-fx-background-color: #1e1e1e;">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="darkslategray" height="300.0" stroke="BLACK"
+                           strokeType="INSIDE" width="700.0" />
+                <HBox spacing="40" alignment="CENTER" style="-fx-padding: 10;" prefHeight="100.0" prefWidth="200.0">
+
+                    <!-- Item Box -->
+                    <VBox fx:id="itmBox" visible="false"
+                          style="-fx-background-color: black; -fx-padding: 10; -fx-border-color: white; -fx-border-width: 2;"
+                          alignment="CENTER" spacing="5" prefWidth="200.0" prefHeight="180.0">
+                        <Label text="Inventory" textFill="white" style="-fx-font-size: 16px;" />
+                        <ScrollPane fx:id="itmScroll" fitToWidth="true" prefHeight="150"
+                                    style="-fx-background-color: transparent;">
+                            <VBox fx:id="itmList" spacing="5" style="-fx-background-color: transparent;" />
+                        </ScrollPane>
+                    </VBox>
+
+                    <!-- Action Box -->
+                    <VBox fx:id="actBox" visible="false"
+                          style="-fx-background-color: black; -fx-padding: 10; -fx-border-color: white; -fx-border-width: 2;"
+                          alignment="CENTER" spacing="5" prefWidth="200.0" prefHeight="150.0">
+                        <Label text="Choose Action" textFill="white" style="-fx-font-size: 16px;" />
+                    </VBox>
+
+                </HBox>
+            </children>
+        </StackPane>
+
+        <!-- Bottom Controls -->
+        <VBox spacing="10" style="-fx-padding: 10;">
+            <children>
+                <HBox alignment="CENTER" spacing="10">
+
+                    <!-- Player's Stats -->
+                    <VBox alignment="CENTER_LEFT" spacing="5">
+                        <Text fill="white" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="You" />
+                        <ProgressBar fx:id="playerHP" prefWidth="250" progress="1.0" />
+                        <Text fx:id="PHText" fill="white" text="HP: 100" />
+                        <ProgressBar fx:id="playerSP" prefWidth="250" progress="1.0" />
+                        <Text fx:id="PSText" fill="white" text="SP: 100" />
+                    </VBox>
+
+                    <!-- Action Buttons -->
+                    <Button fx:id="actBtn" text="Action"
+                            style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 3px; -fx-border-radius: 5px;" />
+                    <Button fx:id="defBtn" text="Defend"
+                            style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 3px; -fx-border-radius: 5px;" />
+                    <Button fx:id="itmBtn" text="Item"
+                            style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-width: 3px; -fx-border-radius: 5px;" />
+                </HBox>
+            </children>
+        </VBox>
+
+    </children>
+</VBox>
