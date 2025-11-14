@@ -1,1 +1,21 @@
-This is our project under CSS123P
+Hello, Miguel!: A Party Game
+Created by Group: Don’t Over Think It! (DOTI)
+This README provides the roles of each team member.
+
+👥 Team Members & Roles
+Don’t Over Think It! (DOTI)
+Name	Role	Responsibilities
+Jayk Malhberg C. Ramolete	Global System Developer	- Artwork
+- Guest Variables
+- Global Game State
+RC De Dios	Global UI/UX Developer	- Global UI Designer
+- Mouse/Key Events Programmer
+Johann Ezekiel Rondilla	Global System Developer	- Start, Pause, and End Screens
+- Main Menu
+Mico Angelo Cruz Tazarte	Battle System Developer	- Battle System State
+- Synchronizing the Battle System with the Global System
+Russell Gee Pelobello	Battle UI/UX Developer	- Battle System Designer
+- Mouse/Key Events Programmer
+Salazar Raphael	Universal System Developer	- Universal System Database (Save, Load, Delete)
+🛠 System Architecture
+🌐 Global System
