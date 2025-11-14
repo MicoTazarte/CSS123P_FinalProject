@@ -1,6 +1,6 @@
-Hello, Miguel!: A Party Game
+**Hello, Miguel!: A Party Game**
 
-Group Name: Don’t Over Think It! (DOTI)
+**Group Name: Don’t Over Think It! (DOTI)**
 
 This README provides the roles of each team member.
 
