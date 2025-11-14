@@ -1,5 +1,6 @@
 Hello, Miguel!: A Party Game
-Created by Group: Don’t Over Think It! (DOTI)
+Group Name: Don’t Over Think It! (DOTI)
+
 This README provides the roles of each team member.
 
 | Name                          | Role                       | Tasks                                                                     |
